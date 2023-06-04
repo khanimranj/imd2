@@ -18,7 +18,7 @@ def makeknowledge():
         for file in files:
             if file.endswith(".pdf"):
                 
-                pdf_reader = PdfReader(directory+'\\'+file)
+                pdf_reader = PdfReader(directory+'\'+file)
                 for page in pdf_reader.pages:
                     text +=page.extract_text()
                     
